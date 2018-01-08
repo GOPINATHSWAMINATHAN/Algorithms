@@ -50,12 +50,12 @@ class linkedList {
         end = null;
         size = 0;
     }
-
-    public linkedList(Node start, Node end, int size) {
-        this.start = start;
-        this.end = end;
-        this.size = size;
-    }
+//
+//    public linkedList(Node start, Node end, int size) {
+//        this.start = start;
+//        this.end = end;
+//        this.size = size;
+//    }
 
 
     public boolean isEmpty() {
