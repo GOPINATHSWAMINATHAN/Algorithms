@@ -75,8 +75,8 @@ class linkedList {
             start = nptr;
             end = start;
         } else {
-            end.setLink(nptr);
-            end = nptr;
+            nptr.setLink(start);
+            start = nptr;
         }
 
     }
@@ -117,15 +117,19 @@ class linkedList {
             return;
         }
         if (pos == size) {
+            //If we delete the tail element, we need to update the link of the node tail in a list.
             Node s = start;
             Node t = start;
             while (s != end) {
+                //This is to get the another node using link of the node to get the end node.
                 t = s;
                 s = s.getLink();
             }
 
             end = t;
+            //end node setting as null to delete it from the list.
             end.setLink(null);
+            //decrementing the size of a list.
             size--;
             return;
         }
@@ -133,10 +137,13 @@ class linkedList {
         Node ptr = start;
         pos = pos - 1;
         for (int i = 1; i < size; i++) {
+            //Finding the position of the element.
             if (i == pos) {
+
                 Node tmp = ptr.getLink();
+                //
                 tmp = tmp.getLink();
-                ptr.setLink(tmp);
+                ptr.setLink(tmp);//or//ptr.setLink(ptr.getLink);
                 break;
             }
             ptr = ptr.getLink();
