@@ -42,6 +42,7 @@ class Graph
         while (queue.size() != 0)
         {
             // Dequeue a vertex from queue and print it
+            //poll()->Retrieves and removes the head (first element) of this list.
             s = queue.poll();
             System.out.print(s+" ");
 
