@@ -1,5 +1,11 @@
 public class StringCompression {
 
+//    * Implement a method to perform basic string compression using the counts of
+// * repeated characters. For example, the string aabcccccaaa would become
+// * a2blc5a3. If the "compressed" string would not become smaller than the original
+// * string, your method should return the original string.
+
+
     static String compress(String s) {
         if (s == null || s.isEmpty()) return s;
 
@@ -24,10 +30,9 @@ public class StringCompression {
         return sb.toString().length() >= s.length() ? s : sb.toString();
     }
 
-    public static void main(String args[])
-    {
-        String a="gopnath";
-        StringBuffer sb=new StringBuffer();
+    public static void main(String args[]) {
+        String a = "gopnath";
+        StringBuffer sb = new StringBuffer();
         sb.append(a);
         sb.append("pulipahdy");
         System.out.println(sb);
