@@ -36,7 +36,6 @@ public class StringCompression {
         sb.append(a);
         sb.append("pulipahdy");
         System.out.println(sb);
-
         System.out.println(compress("aaabccccccaaa"));
     }
 
