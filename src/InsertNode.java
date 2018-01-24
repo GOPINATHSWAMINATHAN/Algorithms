@@ -17,8 +17,9 @@ public class InsertNode {
         //Allocate the node and put the data
 
         Node newNode = new Node(data);
-        //Make new node to m
+        //Make new node
         newNode.next = head;
+        //Assigning the value of newnode to the head. so, now the pointer points  to head of current data.
         head = newNode;
     }
 
