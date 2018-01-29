@@ -30,8 +30,9 @@ public class QuickSort {
             while (array[i] < pivot) {
                 i++;
             }
+
+            //24,2,45,20,56,75,2,56,99,53,12
             while (array[j] > pivot) {
-                System.out.println("J value is "+j);
                 j--;
             }
             if (i <= j) {
