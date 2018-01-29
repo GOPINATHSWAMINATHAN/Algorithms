@@ -31,6 +31,7 @@ public class QuickSort {
                 i++;
             }
             while (array[j] > pivot) {
+                System.out.println("J value is "+j);
                 j--;
             }
             if (i <= j) {
@@ -63,4 +64,7 @@ public class QuickSort {
             System.out.print(" ");
         }
     }
+
+
+
 }
