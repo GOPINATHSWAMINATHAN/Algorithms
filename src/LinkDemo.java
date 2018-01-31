@@ -7,7 +7,6 @@ public class LinkDemo {
      *
      *              The "fast" node might be ahead by a fixed amount, or it might be hopping multiple nodes for each
      *              one node that the "slow" node iterates through.
-     *
      */
 
     LinkDemo next = null;
