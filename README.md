@@ -1,6 +1,6 @@
 # Algorithms
 
-#Asymptotic Notation
+#Asymptotic Notation/ Big-O Notation
     
     * Uniform way of measuring algorithm efficiency, introduced the concepts by computer scientist and developers for measuring 
       the asymptotic complexity of a program.
