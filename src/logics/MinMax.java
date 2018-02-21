@@ -10,7 +10,7 @@ public class MinMax {
 //            sum += i;
 //        }
 //        System.out.println(sum);//1073741825
-        int a = f(4);
+        int a = f(5);
         System.out.println(a);
     }
 
@@ -20,8 +20,9 @@ public class MinMax {
         if (n <= 1) {
             return 1;
         }
+        int a = 10, b = 20;
         return f(n - 1) + f(n - 1);
 
     }
-
+//1,2,4,8,16
 }
