@@ -25,4 +25,6 @@ public class MinMax {
 
     }
 //1,2,4,8,16
+
+    //page no 56
 }
